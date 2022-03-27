@@ -24,7 +24,7 @@ router.get('/', async (req, res) =>{
         await newContact.save() 
         res.status(200).send({msg: "User added successfully...", newUser})
     } catch (error) {
-        res.status(400).send({msg: "cannot add contact..."})
+        res.status(400).send({msg: "cannot add user..."})
     }
     
 })
